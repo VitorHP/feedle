@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  deliver: false
+  feedly_id: MyString
+
+two:
+  deliver: false
+  feedly_id: MyString

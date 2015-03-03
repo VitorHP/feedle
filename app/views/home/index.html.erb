@@ -1,0 +1,20 @@
+
+<ul>
+  <%= form_tag submit_home_index_path, method: :post do %>
+    <%- @feedly.subscriptions_by_category.each do |(category, subscriptions)| %>
+      <li>
+        <span><%= category %>
+        <ul>
+          <%- subscriptions.each do |subscription| %>
+            <li>
+              <%= check_box_tag 'feed_ids[]', subscription['id'], @chosen_feeds.include?(subscription['id']) %>
+              <label><%= subscription.title %></label>
+            </li>
+          <% end %>
+        </ul>
+      </li>
+    <% end %>
+
+    <%= submit_tag 'Salvar' %>
+  <% end %>
+</ul>
