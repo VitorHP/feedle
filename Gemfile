@@ -26,12 +26,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'feedlr'
 gem 'httparty'
 
+gem 'unicorn'
 
 group :development do
   gem 'pry'
   gem 'letter_opener'
   gem 'letter_opener_web', '~> 1.2.0'
 end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
